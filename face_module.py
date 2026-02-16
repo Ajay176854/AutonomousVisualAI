@@ -20,4 +20,3 @@ def recognize_faces(frame):
     except Exception as e:
         print(f"Error recognizing faces: {e}")
         return []
-

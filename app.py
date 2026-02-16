@@ -27,24 +27,23 @@ if uploaded_file is not None:
     # Question section
     question = st.text_input("Ask a question about the image")
 
-    # Memory setup
+# Memory setup
 if "history" not in st.session_state:
     st.session_state.history = []
 
-    question = st.text_input("Ask a question about the image")
 # Store questions
-if question:
+if 'question' in locals() and question:
     st.session_state.history.append(question)
 
 # Show previous questions
 st.write("Previous questions:", st.session_state.history)
 
-#Answer logic below
-if question:
+# Answer logic below
+if 'question' in locals() and question:
     answer = ask_llm(data["objects"], data["text"], question)
     st.write(answer)
 
-if question:
+if 'question' in locals() and question:
     objects = data["objects"]
     text = data["text"]
 
@@ -69,5 +68,3 @@ st.subheader("Conversation")
 
 for role, message in st.session_state.chat_history:
     st.write(f"**{role}:** {message}")
-
-

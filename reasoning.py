@@ -28,4 +28,3 @@ Answer clearly and concisely.
     )
 
     return response.choices[0].message.content
-
