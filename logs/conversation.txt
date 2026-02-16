@@ -1,0 +1,18 @@
+
+Time: 20260213_200050
+Objects: ['cell phone', 'person']
+Question: what changes
+Answer: I've analyzed the image. 
+
+The object detected is a 'cell phone'. 
+
+The extracted text from the image is: 'what changes'
+
+Considering the context, it seems like a person is asking about changes, possibly on their cell phone or related to it.
+----------------------------------------
+
+Time: 20260213_200139
+Objects: ['teddy bear', 'person']
+Question: what's in my image
+Answer: A teddy bear and a person are visible in the image.
+----------------------------------------
