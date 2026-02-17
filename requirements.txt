@@ -1,14 +1,16 @@
 streamlit
 ultralytics
-streamlit-webrtc==0.47.7
 opencv-python-headless
-torch
-torchvision
-numpy
 easyocr
 pillow
-openai
+numpy
 groq
+streamlit-webrtc
+av
+torch
+torchvision
+
+
 
 
 
