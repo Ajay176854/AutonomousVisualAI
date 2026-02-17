@@ -72,7 +72,6 @@ st.subheader("Live Webcam Detection")
 RTC_CONFIGURATION = RTCConfiguration({
     "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
 })
-
 webrtc_streamer(
     key="live-camera",
     rtc_configuration=RTC_CONFIGURATION,
