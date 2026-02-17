@@ -1,9 +1,13 @@
-streamlit
+streamlitstreamlit
 ultralytics
 opencv-python-headless
+torch
+torchvision
 numpy
 pillow
-requests
+deepface
+easyocr
 python-dotenv
-groq
+openai
+
 
