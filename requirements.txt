@@ -5,11 +5,11 @@ opencv-python-headless
 torch
 torchvision
 numpy
-pillow
 easyocr
-python-dotenv
+pillow
 openai
 groq
+
 
 
 
