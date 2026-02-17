@@ -8,6 +8,9 @@ pillow
 easyocr
 python-dotenv
 openai
+groq
+
+
 
 
 
