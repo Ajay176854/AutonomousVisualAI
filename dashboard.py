@@ -3,7 +3,7 @@ import tempfile
 from image_pipeline import analyze_image
 from reasoning import ask_llm
 import os
-from streamlit_webrtc import webrtc_streamer, VideoProcessorBase
+from streamlit_webrtc import webrtc_streamer, RTCConfiguration, VideoProcessorBase
 import av
 import cv2
 from ultralytics import YOLO
@@ -69,9 +69,13 @@ if camera_image is not None:
 
 st.subheader("Live Webcam Detection")
 
+RTC_CONFIGURATION = RTCConfiguration({
+    "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
+})
+
 webrtc_streamer(
     key="live-camera",
+    rtc_configuration=RTC_CONFIGURATION,
     video_processor_factory=VideoProcessor,
-    rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
     media_stream_constraints={"video": True, "audio": False},
 )
