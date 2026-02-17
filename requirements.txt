@@ -1,5 +1,6 @@
 streamlit
 ultralytics
+streamlit-webrtc==0.47.7
 opencv-python-headless
 torch
 torchvision
@@ -9,6 +10,7 @@ easyocr
 python-dotenv
 openai
 groq
+
 
 
 
