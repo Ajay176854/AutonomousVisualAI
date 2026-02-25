@@ -1,7 +1,7 @@
 from groq import Groq
 
 # initialize client
-client = Groq(api_key="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")
+client = Groq(api_key="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")
 
 def ask_llm(objects, text, question):
 
